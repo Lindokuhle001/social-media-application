@@ -1,0 +1,13 @@
+version: '3.3'
+
+services:
+
+  socialMediaDB:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: socialMediaDB
+    ports:
+      - 5432:5432

@@ -14,7 +14,8 @@ export type Post = {
 //     comment:String
 // }
 
-export type user = {
+export type User = {
+    userId:String
     firstName: String
     lastName: String
     email: String
