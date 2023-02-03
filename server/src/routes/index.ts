@@ -30,9 +30,9 @@ router.post(
         friends,
         location,
         occupation
-      ).then((data) => res.send(data));
+      ).then((user) => res.json({ user, msg: "Successfully create todo" }));
     } catch (error) {
-      res.status(500).send(error);
+      res.json({ msg: "registration failed", status: 500, route: "/auth/register" });
     }
   }
 );
